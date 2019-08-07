@@ -5,6 +5,7 @@ Callable是有返回值的Runnable，即回调。
 
 另外有一点，执行runnable或callable时，不要定义线程池来执行，因为执行完线程，线程池会等待新线程，而不会关闭程序。
 正确做法是开一个线程，将runnable或callable放进去。
+```
     public class Test {
     
         public static void main(String[] args) {
@@ -58,3 +59,4 @@ Callable是有返回值的Runnable，即回调。
         }
     
     }
+```

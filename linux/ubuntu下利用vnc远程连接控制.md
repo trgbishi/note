@@ -1,16 +1,16 @@
-服务端，即被控制端需要做的
-================================================
-安装vncserver
--------------------------------------------------
+## 服务端（被控制端）
+
+1. 安装vncserver
 	sudo apt-get install tightvncserver
 
-首次启用vncserver会提示初始化密码
-如果没有，或者之后需要重置
--------------------------------------------------
-	vncpasswd
+    > 首次启用vncserver会提示初始化密码
+    >如果没有，或者之后需要重置
+    ```
+        vncpasswd
+    ```
 
-打开.vnc/xstartup，并且直接覆盖(以下能同时解决客户端灰屏问题)
--------------------------------------------------
+2. 打开.vnc/xstartup，并且直接覆盖(以下能同时解决客户端灰屏问题)
+```
 	#!/bin/sh
     export XKL_XMODMAP_DISABLE=1	 
     unset SESSION_MANAGER	
@@ -20,37 +20,39 @@
     metacity &	
     nautilus &	
     gnome-terminal &
+```
 
-控制模式选择(only view || ...)
--------------------------------------------------
-only-view mode:
-	gsettings set org.gnome.Vino network-interface lo 
-another mode:
-	gsettings reset org.gnome.Vino network-interface 
+3. 控制模式选择(only view || ...)
+```
+    only-view mode:
+    	gsettings set org.gnome.Vino network-interface lo 
+    another mode:
+    	gsettings reset org.gnome.Vino network-interface 
+```
 
-启动服务
--------------------------------------------------
-	vncserver :1  
+4. 启动服务  
+```    
+    vncserver :1  
+```
 
-关闭服务
--------------------------------------------------
+5. 关闭服务
+```
 	vncserver -kill :1  
+```
 
 
-windows系统安装VNC Viewer
-===================================================
-ubuntu系统
-===================================================
+## 客户端（控制端）
+1. windows系统  
+```
+    安装VNC Viewer
+```
 
-安装
----------------------------------------------------
+2. ubuntu系统
+```
 	sudo apt-get install xvnc4viewer  
-
-启动并连接服务端的窗口
----------------------------------------------------
-	vncviewer 服务端IP:1  
+	vncviewer 服务端IP:1  #启动并连接服务端的窗口
+```
 
 
-
-可选：
+>可选：
     sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal  

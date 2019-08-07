@@ -6,10 +6,9 @@
     hrStorageAllocationUnits 为8192，即8kb簇
     总16TB
 
-    linux参考https://blog.csdn.net/redleaf0000/article/details/38303299?locationNum=14
     修改/etc/snmp/snmpd.conf
     增加一行
     realStorageUnits 0
     即对hrStorageAllocationUnits进行扩容，从而保持hrStorageSize的32位最大大小
 
-    windows
+[linux参考](https://blog.csdn.net/redleaf0000/article/details/38303299?locationNum=14)
