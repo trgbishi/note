@@ -1,5 +1,5 @@
 ## 第一种方案
-```
+```java
     Set<String> set = new HashSet<>();
     set.add("aa");
     sout(set.iterator.next());
