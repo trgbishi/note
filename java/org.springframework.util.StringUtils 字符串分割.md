@@ -1,4 +1,4 @@
-```
+```java
     String test = "";
     String[] splitSpace = StringUtils.split(test, " ");
     System.out.println(splitSpace);//null

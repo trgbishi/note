@@ -101,6 +101,7 @@ synchronized 关键字声明的方法同一时间只能被一个线程访问。s
 4. 一个类只能继承一个抽象类，而一个类却可以实现多个接口。
 
 eg:
+```java
     import java.lang.*;
     //引入包
     public interface NameOfInterface
@@ -108,9 +109,8 @@ eg:
     	//任何类型 final, static 字段
     	//抽象方法
     }
-
-## 多线程
-http://www.cnblogs.com/wxd0108/p/5479442.html
+```
+## [多线程](http://www.cnblogs.com/wxd0108/p/5479442.html)
 ### 几种状态
 #### 新建状态:
 使用 new 关键字和 Thread 类或其子类建立一个线程对象后，该线程对象就处于新建状态。它保持这个状态直到程序 start() 这个线程。
@@ -204,11 +204,12 @@ Java5 引入了一种主要用于数组的增强型 for 循环，Java 增强 for
     	//代码句子
     }
 eg:
+```java
     int [] numbers = {10, 20, 30, 40, 50};
     for(int x : numbers ){
     	...
     }
-    
+```
     
 ### StringBuilder与StringBuffer
 由于 StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用 StringBuilder 类。然而在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。
@@ -219,14 +220,19 @@ eg:
 ### 数组作为函数的参数
     数组可以作为参数传递给方法。
     例如，下面的例子就是一个打印 int 数组中元素的方法:
+```java
         public static void printArray(int[] array) {
             for (int i = 0; i < array.length; i++) {
                 System.out.print(array[i] + " ");
             }
         }
+```        
     下面例子调用 printArray 方法打印出 3，1，2，6，4 和 2：
-        printArray(new int[]{3, 1, 2, 6, 4, 2});
+```java
+     printArray(new int[]{3, 1, 2, 6, 4, 2});
+```
     数组作为函数的返回值
+```java
         public static int[] reverse(int[] list) {
             int[] result = new int[list.length];
             for (int i = 0, j = result.length - 1; i < list.length; i++, j--) {
@@ -234,7 +240,7 @@ eg:
             }
             return result;
         }
-
+```
 
 ### 可变参数
 * JDK 1.5 开始，Java支持传递同类型的可变参数给一个方法。

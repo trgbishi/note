@@ -1,13 +1,17 @@
-//编译
->> g++ client.cpp -o client
->> g++ server.cpp -o server
-//运行
->> ./server
->> ./client
-
+* 编译
+```
+g++ client.cpp -o client
+g++ server.cpp -o server
+```
+* 运行
+```
+ ./server
+ ./client
+```
 
 
 client.cpp
+```C++
 #include <iostream>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -70,8 +74,9 @@ int main(int argc, char* argv[])
 
     return 0;
 }
-
+```
 server.cpp
+```C++
 //#include <stdio.h>
 #include <iostream>
 #include <sys/types.h>
@@ -149,3 +154,4 @@ int main(int argc, char* argv[])
     close(server_fd);
     return 0;
 }
+```
