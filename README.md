@@ -1,4 +1,2 @@
-20190725由segmentfault迁移而来
-sf上记笔记不能分组，导致复习与查阅不方便，特此整理
-
-
+主要是托管于github  
+阅读在[gitbook](https://app.gitbook.com/@trgbishi/s/note/)
