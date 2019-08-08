@@ -45,3 +45,8 @@
     git push origin develop_1.0 //将本地develop_1分支作为远程develop_1分支
 ```
 
+6. 删除操作
+```
+    git rm -f somefile
+    git rm -rf somedir
+```
