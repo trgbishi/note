@@ -61,6 +61,7 @@
     - [java/关于java Callable与Runnable的测试](java/关于java Callable与Runnable的测试.md)
     - [java/关于JAVA ThreadPoolExecutor](java/关于JAVA ThreadPoolExecutor.md)
     - [java/如何取java Set集合的第一个元素](java/如何取java Set集合的第一个元素.md)
+    - [java/http java demo](java/HttpUtil.java)
 
 
 * [kafka](kafka/kafka producer consumer.md)
