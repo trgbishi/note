@@ -1,0 +1,32 @@
+### 上传离线yum包至/data/yum 路径下
+
+### 创建本地仓库
+```
+    #yum install createrepo
+    createrepo /data/yum
+```
+### 编辑yum的repo文件
+```
+    cd /etc
+    mv yum.repos.d yum.repos.d.bak
+    mkdir yum.repos.d
+    cd yum.repos.d
+    
+    vi Centos-Local.repo
+    [Centos­Local] 
+    name=centos yum repo 
+    baseurl=file:///data/yum 
+    enabled=1 
+    gpgcheck=0 
+    priority=1
+```
+
+### 清理yum缓存
+```
+    yum clean all
+```
+
+### 列出可安装的软件列表
+```
+    yum list
+```
