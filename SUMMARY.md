@@ -2,7 +2,7 @@
 
 * [简介](README.md)
 
-* [C++]
+* [C++](C++/README.md)
     - [lambda的参数捕获](C++/lambda的参数捕获.md)
     - [memcpy与浅拷贝](C++/memcpy与浅拷贝.md)
     - [udpsocket demo](C++/udpsocket demo.md)
@@ -17,7 +17,7 @@
 
 
 
-* [DB]
+* [DB](DB/README.md)
     * [mongodb]
         - [mongodb](DB/mongodb/mongodb 主-从-仲裁 集群搭建.md)
     * [mysql]
@@ -31,15 +31,15 @@
 
 
 
-* [docker]
+* [docker](docker/README.md)
     - [指令](docker/指令.md)
 
 
-* [git]
+* [git](git/README.md)
     - [git](git/简单的git方法.md)
 
 
-* [java]
+* [java](java/README.md)
     - [java/CountDownLatch测试](java/CountDownLatch测试.md)
     - [java/fastjson 下 str to mapList](java/fastjson 下 str to mapList.md)
     - [java/IDEA  把maven项目打包成war包直接部署在tomcat上](java/IDEA  把maven项目打包成war包直接部署在tomcat上.md)
@@ -64,10 +64,10 @@
     - [java/http java demo](java/HttpUtil.java)
 
 
-* [kafka](kafka/kafka producer consumer.md)
+* [kafka](kafka/README.md)
     - [kafka producer consumer](kafka/kafka producer consumer.md)
 
-* [linux]
+* [linux](Linux/README.md)
     - [linux指令](linux/linux指令.md)
     - [shell 脚本传参带空格](linux/shell 脚本传参带空格.md)
     - [sh^M. bad interpreter. No such file or directory](linux/sh^M. bad interpreter. No such file or directory.md)
@@ -80,12 +80,12 @@
     - [查询与关闭进程](linux/查询与关闭进程.md)
 
 
-* [other]
+* [other](other/README.md)
     - [倒排索引](other/倒排索引.md)
     - [反向代理与正向代理](other/反向代理与正向代理.md)
 
 
-* [python]
+* [python](python/README.md)
     - [aiohttp json格式 无法被解析](python/aiohttp json格式 无法被解析.md)
     - [http post get](python/http post get.md)
     - [python getter setter](python/python getter setter.md)
@@ -108,18 +108,18 @@
 
 
 
-* [ros]
+* [ros](ros/README.md)
     - [ROS常用命令字典](ros/ROS常用命令字典.md)
     - [ROS自定义msg类型及使用](ros/ROS自定义msg类型及使用.md)
     - [ubuntu16.04下安装ROS Kinetic](ros/ubuntu16.04下安装ROS Kinetic.md)
     - [ubuntu下用到的ros指令](ros/ubuntu下用到的ros指令.md)
 
 
-* [sublime]
+* [sublime](sublime/README.md)
     - [sublime text3 Package Control的remove与reinstall](sublime/sublime text3 Package Control的remove与reinstall.md)
 
 
-* [zabbix]
+* [zabbix](zabbix/README.md)
     - [centOS6.5安装 zabbix-2.0.6](zabbix/centOS6.5安装 zabbix-2.0.6.md)
     - [centos6.5安装zabbix4.0](zabbix/centos6.5安装zabbix4.0.md)
     - [centos7 zabbix 4.0安装](zabbix/centos7 zabbix 4.0安装.md)
@@ -128,4 +128,6 @@
     - [zabbix 监控 oracle](zabbix/zabbix 监控 oracle.md)
     - [zabbix 监控mysql](zabbix/zabbix 监控mysql.md)
     - [Zabbix+Grafana](zabbix/Zabbix+Grafana.md)
+    - [创建本地yum源](zabbix/创建本地yum源.md)
+    
 
