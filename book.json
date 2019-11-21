@@ -1,0 +1,41 @@
+{
+    "plugins": [
+        "back-to-top-button",
+        "chapter-fold",
+        "code",
+        "splitter",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "pageview-count",
+        "tbfed-pagefooter",
+        "popup",
+        "-sharing",
+        "sharing-plus"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy yaobaochu 2019",
+            "modify_label": "最新修改时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "sharing": {
+            "facebook": true,
+            "google": true,
+            "qq": true,
+            "qzone": true,
+            "twitter": true,
+            "weibo": true,
+            "wechat":true,
+            "all": [
+                "facebook",
+                "google",
+                "qq",
+                "qzone",
+                "twitter",
+                "weibo",
+                "wechat"
+            ]
+        }
+    }
+}
