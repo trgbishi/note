@@ -22,6 +22,7 @@
         - [mongodb](DB/mongodb/mongodb 主-从-仲裁 集群搭建.md)
     * [mysql]
         - [linux查看mysql信息](DB/mysql/linux查看mysql信息.md)
+        - [mysql8 修改初始密码](DB/mysql8 修改初始密码.md)
     * [oracle]
         - [resource busy and acquire with nowait specified](DB/oracle/resource busy and acquire with nowait specified.md)
         - [windows cmd连接oracle](DB/oracle/windows cmd连接oracle.md)
