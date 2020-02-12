@@ -22,7 +22,11 @@
         - [mongodb](DB/mongodb/mongodb 主-从-仲裁 集群搭建.md)
     * [mysql]
         - [linux查看mysql信息](DB/mysql/linux查看mysql信息.md)
-        - [mysql8 修改初始密码](DB/mysql8 修改初始密码.md)
+        - [mysql8 修改初始密码](DB/mysql/mysql8 修改初始密码.md)
+        - [sql优化](DB/mysql/sql优化.md)
+        - [主从复制与读写分离](DB/mysql/主从复制与读写分离.md)
+        - [表分区](DB/mysql/表分区.md)
+        - [innodb与myisam引擎对比](DB/mysql/innodb与myisam引擎对比.md)
     * [oracle]
         - [resource busy and acquire with nowait specified](DB/oracle/resource busy and acquire with nowait specified.md)
         - [windows cmd连接oracle](DB/oracle/windows cmd连接oracle.md)
