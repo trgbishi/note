@@ -5,7 +5,7 @@
     #yum install createrepo
     createrepo /data/yum
 ```
-### 编辑yum的repo文件
+### 编辑yum的repo文件,指向创建的本地仓库
 ```
     cd /etc
     mv yum.repos.d yum.repos.d.bak
