@@ -136,4 +136,5 @@
     - [Zabbix+Grafana](zabbix/Zabbix+Grafana.md)
     - [创建本地yum源](zabbix/创建本地yum源.md)
     
-
+* [argorithm](algorithm/README.md)
+    - [paxos思路整理](algorithm/paxos.md)
