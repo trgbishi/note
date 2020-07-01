@@ -41,7 +41,7 @@
 
 
 * [git](git/README.md)
-    - [git](git/简单的git方法.md)
+    - [简单的git方法](git/简单的git方法.md)
 
 
 * [java](java/README.md)
