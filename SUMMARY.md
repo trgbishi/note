@@ -27,6 +27,7 @@
         - [主从复制与读写分离](DB/mysql/主从复制与读写分离.md)
         - [表分区](DB/mysql/表分区.md)
         - [innodb与myisam引擎对比](DB/mysql/innodb与myisam引擎对比.md)
+        - [一些sql](DB/mysql/一些sql.md)
     * [oracle]
         - [resource busy and acquire with nowait specified](DB/oracle/resource busy and acquire with nowait specified.md)
         - [windows cmd连接oracle](DB/oracle/windows cmd连接oracle.md)
