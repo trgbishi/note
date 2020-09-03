@@ -112,6 +112,7 @@
     - [绘制2d,3d图像](python/绘制2d,3d图像.py)
     - [读文件功能出现的bug](python/读文件功能出现的bug.md)
     - [遍历文件夹下所有py文件，并输出文件名](python/遍历文件夹下所有py文件，并输出文件名.py)
+    - [pip相关](python/pip相关.py)
 
 
 
