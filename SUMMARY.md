@@ -139,6 +139,7 @@
     - [Zabbix+Grafana](zabbix/Zabbix+Grafana.md)
     - [创建本地yum源](zabbix/创建本地yum源.md)
     - [外部检查与采集器](zabbix/外部检查与采集器.md)
+    - [关于snmpv3的安全级别](关于snmpv3的安全级别.md)
     
 * [argorithm](algorithm/README.md)
     - [paxos思路整理](algorithm/paxos.md)
