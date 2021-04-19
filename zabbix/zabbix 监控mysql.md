@@ -15,74 +15,73 @@
 # Copyright:   2015 (c) DengYun
 # License:     GPL
 
+# 主机地址/IP
+MYSQL_HOST=$1
+
+
+MYSQL_PORT=$2
+
 # 用户名
-MYSQL_USER='zabbix'
+MYSQL_USER=$3
 
 # 密码
-MYSQL_PWD='zabbix'
-
-# 主机地址/IP
-MYSQL_HOST='127.0.0.1'
-
-# 端口
-MYSQL_PORT='3306'
+MYSQL_PWD=$4
 
 # 数据连接
 MYSQL_CONN="/usr/bin/mysqladmin -u${MYSQL_USER} -p${MYSQL_PWD} -h${MYSQL_HOST} -P${MYSQL_PORT}"
-
 # 参数是否正确
-if [ $# -ne "1" ];then 
+if [ $# -ne "5" ];then 
     echo "arg error!" 
 fi 
 
 # 获取数据
-case $1 in 
+case $5 in 
     Uptime) 
-        result=`${MYSQL_CONN} status|cut -f2 -d":"|cut -f1 -d"T"` 
+        result=`${MYSQL_CONN} status 2>/dev/null|cut -f2 -d":"|cut -f1 -d"T"` 
         echo $result 
         ;; 
     Com_update) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Com_update"|cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Com_update"|cut -d"|" -f3` 
         echo $result 
         ;; 
     Slow_queries) 
-        result=`${MYSQL_CONN} status |cut -f5 -d":"|cut -f1 -d"O"` 
+        result=`${MYSQL_CONN} status 2>/dev/null|cut -f5 -d":"|cut -f1 -d"O"` 
         echo $result 
         ;; 
     Com_select) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Com_select"|cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Com_select"|cut -d"|" -f3` 
         echo $result 
                 ;; 
     Com_rollback) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Com_rollback"|cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Com_rollback"|cut -d"|" -f3` 
                 echo $result 
                 ;; 
     Questions) 
-        result=`${MYSQL_CONN} status|cut -f4 -d":"|cut -f1 -d"S"` 
+        result=`${MYSQL_CONN} status 2>/dev/null|cut -f4 -d":"|cut -f1 -d"S"` 
                 echo $result 
                 ;; 
     Com_insert) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Com_insert"|cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Com_insert"|cut -d"|" -f3` 
                 echo $result 
                 ;; 
     Com_delete) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Com_delete"|cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Com_delete"|cut -d"|" -f3` 
                 echo $result 
                 ;; 
     Com_commit) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Com_commit"|cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Com_commit"|cut -d"|" -f3` 
                 echo $result 
                 ;; 
     Bytes_sent) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Bytes_sent" |cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Bytes_sent" |cut -d"|" -f3` 
                 echo $result 
                 ;; 
     Bytes_received) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Bytes_received" |cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Bytes_received" |cut -d"|" -f3` 
                 echo $result 
                 ;; 
     Com_begin) 
-        result=`${MYSQL_CONN} extended-status |grep -w "Com_begin"|cut -d"|" -f3` 
+        result=`${MYSQL_CONN} extended-status 2>/dev/null|grep -w "Com_begin"|cut -d"|" -f3` 
                 echo $result 
                 ;; 
                         
@@ -102,11 +101,14 @@ vi /usr/local/zabbix/etc/zabbix_agentd.conf
 vi /etc/zabbix/zabbix_agentd.d/userparameter_mysql.conf 
     UserParameter=mysql.version,mysql -V
     UserParameter=mysql.status[*],/etc/zabbix/zabbix_agentd.d/script/check_mysql.sh $1 $2 $3 $4 $5
-    UserParameter=mysql.ping[*],mysqladmin -h$1 -P$2 -u$3 -p$4 ping | grep -c alive
+    UserParameter=mysql.ping[*],mysqladmin -h$1 -P$2 -u$3 -p$4 ping 2>/dev/null| grep -c alive
 ```
 
 ### 模板见DB#Mysql
     注意填写宏
+    如果想要便捷，方便运维工程师添加监控，则所有的mysql都使用zabbix-server主机上的agent，只需要在页面配置宏即可
+    ps:也不排除用户提供的账号只能在localhost访问，如此只能在数据库服务器上安装agent
+    再ps:由于5.7之后安全策略问题，命令行直接输入密码会warning，且无法过滤。因此在所有命令后追加 2>/dev/null，将错误日志转储，同时也会过滤掉其它的日志，检查时注意
 
 ### 重启服务
 ```
