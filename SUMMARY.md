@@ -141,7 +141,7 @@
     - [创建本地yum源](zabbix/创建本地yum源.md)
     - [外部检查与采集器](zabbix/外部检查与采集器.md)
     - [关于snmpv3的安全级别](关于snmpv3的安全级别.md)
-    - [关于web监测数据间隔时间长](关于web监测数据间隔时间长.md)
+    - [userparameters特殊字符](userparameters特殊字符.md)
     
 * [argorithm](algorithm/README.md)
     - [paxos思路整理](algorithm/paxos.md)
