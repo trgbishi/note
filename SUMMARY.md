@@ -115,6 +115,7 @@
     - [遍历文件夹下所有py文件，并输出文件名](python/遍历文件夹下所有py文件，并输出文件名.py)
     - [pip相关](python/pip相关.md)
     - [Anaconda常用指令](python/Anaconda常用指令.md)
+    - [文件批量重命名](python/文件批量重命名.py)
 
 
 
