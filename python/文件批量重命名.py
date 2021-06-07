@@ -13,7 +13,7 @@ def eachFile(filepath):
     for s in pathDir:
         newDir=os.path.join(filepath,s)     #将文件名加入到当前文件路径后面
         if os.path.isfile(newDir) :         #如果是文件
-            if 'old_str' in newDir:  #判断是否包含
+            if old_str in newDir:  #判断是否包含
                 newnew = newDir.replace(old_str,new_str)
                 os.renames(newDir,newnew) 
                 pass
