@@ -86,6 +86,7 @@
     - [vi对只读写入](linux/vi对只读写入.md)
     - [三种启动shell脚本的方式](linux/三种启动shell脚本的方式.md)
     - [查询与关闭进程](linux/查询与关闭进程.md)
+    - [端口转发](linux/端口转发.md)
 
 
 * [other](other/README.md)
