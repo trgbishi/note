@@ -144,6 +144,7 @@
     - [外部检查与采集器](zabbix/外部检查与采集器.md)
     - [关于snmpv3的安全级别](关于snmpv3的安全级别.md)
     - [userparameters特殊字符](userparameters特殊字符.md)
+    - [关于server的too many connextions](关于server的too many connextions.md)
     
 * [argorithm](algorithm/README.md)
     - [paxos思路整理](algorithm/paxos.md)
