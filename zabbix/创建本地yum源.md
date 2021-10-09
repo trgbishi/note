@@ -12,6 +12,7 @@
     mkdir yum.repos.d
     cd yum.repos.d
     
+    建议手动输入，粘贴会出错：Bad id for repo
     vi Centos-Local.repo
     [Centos­Local] 
     name=centos yum repo 
