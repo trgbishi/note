@@ -31,6 +31,7 @@
     * [oracle]
         - [resource busy and acquire with nowait specified](DB/oracle/resource busy and acquire with nowait specified.md)
         - [windows cmd连接oracle](DB/oracle/windows cmd连接oracle.md)
+        - [创建只读账户](DB/oracle/创建只读账户.md)
     * [sqlserver]
         - [sql server本地能启动，但是并不能找到其运行端口](DB/sqlserver/sql server本地能启动，但是并不能找到其运行端口.md)
     * [使用powerdesign上的建表语句时，需要指定数据库语法](DB/使用powerdesign上的建表语句时，需要指定数据库语法.md)
