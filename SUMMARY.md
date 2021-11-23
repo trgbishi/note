@@ -89,6 +89,7 @@
     - [查询与关闭进程](linux/查询与关闭进程.md)
     - [端口转发](linux/端口转发.md)
     - [目录大小查看](linux/目录大小查看.md)
+    - [ssh访问权限控制](linux/ssh访问权限控制.md)
 
 
 * [other](other/README.md)
