@@ -44,6 +44,7 @@
 
 * [git](git/README.md)
     - [简单的git方法](git/简单的git方法.md)
+    - [切换到远程分支](git/切换到远程分支.md)
 
 
 * [java](java/README.md)
