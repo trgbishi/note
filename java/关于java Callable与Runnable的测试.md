@@ -1,7 +1,7 @@
 一个demo，测试了下Callable,Runnable，理清楚相互间的关系。
-Callable是有返回值的Runnable，即回调。
-当需要线程执行结果时，可以将Callable对象作为唯一构造参数，来定义FutureTask对象
-当使用futureTask.get()时，会阻塞，直到futureTask里的线程执行完毕并返回
+Callable是有返回值的Runnable，即回调。<br>
+当需要线程执行结果时，可以将Callable对象作为唯一构造参数，来定义FutureTask对象<br>
+当使用futureTask.get()时，会阻塞，直到futureTask里的线程执行完毕并返回<br>
 
 另外有一点，执行runnable或callable时，不要定义线程池来执行，因为执行完线程，线程池会等待新线程，而不会关闭程序。
 正确做法是开一个线程，将runnable或callable放进去。

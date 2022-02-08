@@ -2,7 +2,7 @@
 ```java
     Set<String> set = new HashSet<>();
     set.add("aa");
-    sout(set.iterator.next());
+    System.out.println(set.iterator.next());
 ``` 
 ## 第二种方案
 ```java
