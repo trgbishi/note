@@ -92,6 +92,7 @@
     - [端口转发](linux/端口转发.md)
     - [目录大小查看](linux/目录大小查看.md)
     - [ssh访问权限控制](linux/ssh访问权限控制.md)
+    - [centos8清华源](linux/Centos8_Base.repo)
 
 
 * [other](other/README.md)
