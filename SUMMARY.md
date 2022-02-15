@@ -93,6 +93,7 @@
     - [目录大小查看](linux/目录大小查看.md)
     - [ssh访问权限控制](linux/ssh访问权限控制.md)
     - [centos8清华源](linux/Centos8_Base.repo)
+    - [关于虚拟机nat没有网络](linux/关于虚拟机nat没有网络.md)
 
 
 * [other](other/README.md)
