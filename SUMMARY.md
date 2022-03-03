@@ -153,6 +153,7 @@
     - [userparameters特殊字符](userparameters特殊字符.md)
     - [关于server的too many connextions](关于server的too many connextions.md)
     - [linux配置snmpv3](linux配置snmpv3.md)
+    - [关于连不上数据库](关于连不上数据库.md)
     
 * [argorithm](algorithm/README.md)
     - [paxos思路整理](algorithm/paxos.md)
