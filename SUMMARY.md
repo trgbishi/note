@@ -73,6 +73,7 @@
     - [java/http java demo](java/HttpUtil.java)
     - [java/通过maven-proguard进行代码混淆](java/通过proguard进行代码混淆.md)
     - [java/netty udp server and client](java/netty udp server and client.md)
+    - [java/文件夹内所有文件中字符串批量替换](java/TextReplace.java)
 
 
 * [kafka](kafka/README.md)
