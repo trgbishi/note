@@ -34,6 +34,8 @@
         - [创建只读账户](DB/oracle/创建只读账户.md)
     * [sqlserver]
         - [sql server本地能启动，但是并不能找到其运行端口](DB/sqlserver/sql server本地能启动，但是并不能找到其运行端口.md)
+    * [influxdb]
+        - [centos8下的安装及基本设置](DB/influxdb/centos8下的安装及基本设置.md)
     * [使用powerdesign上的建表语句时，需要指定数据库语法](DB/使用powerdesign上的建表语句时，需要指定数据库语法.md)
 
 
