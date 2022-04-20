@@ -81,6 +81,7 @@
 
 * [kafka](kafka/README.md)
     - [kafka producer consumer](kafka/kafka producer consumer.md)
+    - [kafka分区副本与节点](kafka/kafka分区副本与节点.md)
 
 * [linux](Linux/README.md)
     - [linux指令](linux/linux指令.md)
