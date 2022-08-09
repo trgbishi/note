@@ -100,6 +100,7 @@
     - [centos8清华源](linux/Centos8_Base.repo)
     - [关于虚拟机nat没有网络](linux/关于虚拟机nat没有网络.md)
     - [centos8离线仓库制作流程](linux/centos8离线仓库制作流程.md)
+    - [Centos7设置DNS](linux/Centos7设置DNS.md)
 
 
 * [other](other/README.md)
