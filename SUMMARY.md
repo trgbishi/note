@@ -106,6 +106,7 @@
 * [other](other/README.md)
     - [倒排索引](other/倒排索引.md)
     - [反向代理与正向代理](other/反向代理与正向代理.md)
+    - [文件名关键词替换](other/文件名关键词替换.md)
 
 
 * [python](python/README.md)
