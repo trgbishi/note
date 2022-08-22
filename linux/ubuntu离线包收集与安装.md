@@ -9,9 +9,17 @@ sudo apt-get -f -y install
 aptitude --download-only install  language-pack-zh-hans -y
 
 
+离线包制作
+sudo mkdir /offlinePackage
+sudo cp -r /var/cache/apt/archives  /offlinePackage
+sudo chmod 777 -R /offlinePackage/
+sudo apt-get install dpkg-dev
+sudo dpkg-scanpackages /offlinePackage/ /dev/null |gzip >/offlinePackage/Packages.gz
 
-如果已经准备好了所有的离线包，现在面对一个干净的全新的系统，想要在离线环境下安装
-首先将所有的离线deb文件上传到/var/cache/apt/archives
-sudo dpkg -i aaa.deb 
-如果报错依赖缺少,执行以下指令会优先在/var/cache/apt/archives内找上一条安装指令缺少的依赖包并安装上
-sudo apt-get -f -y install
+
+离线包使用
+sudo mkdir /offlinePackage
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.back
+sudo vi /etc/apt/sources.list
+    deb [trusted=yes] file:/// offlinePackage/
+sudo apt-get update
