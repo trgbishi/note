@@ -10,8 +10,8 @@ aptitude --download-only install  language-pack-zh-hans -y
 
 
 离线包制作
-sudo mkdir /offlinePackage
-sudo cp -r /var/cache/apt/archives  /offlinePackage
+sudo mkdir -p /offlinePackage/repo
+sudo cp -r /var/cache/apt/archives  /offlinePackage/repo
 sudo chmod 777 -R /offlinePackage/
 sudo apt-get install dpkg-dev
 sudo dpkg-scanpackages /offlinePackage/ /dev/null |gzip >/offlinePackage/Packages.gz
@@ -19,6 +19,7 @@ sudo dpkg-scanpackages /offlinePackage/ /dev/null |gzip >/offlinePackage/Package
 
 离线包使用
 sudo mkdir /offlinePackage
+将repo文件夹与Packages.gz上传到offlinePackage目录下
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.back
 sudo vi /etc/apt/sources.list
     deb [trusted=yes] file:/// offlinePackage/
