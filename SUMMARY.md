@@ -102,6 +102,7 @@
     - [centos8离线仓库制作流程](linux/centos8离线仓库制作流程.md)
     - [Centos7设置DNS](linux/Centos7设置DNS.md)
     - [ubuntu离线包收集与安装](linux/ubuntu离线包收集与安装.md)
+    - [centos修改时区](centos修改时区.md)
 
 
 * [other](other/README.md)
