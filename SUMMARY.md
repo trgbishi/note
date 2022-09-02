@@ -49,6 +49,7 @@
     - [简单的git方法](git/简单的git方法.md)
     - [切换到远程分支](git/切换到远程分支.md)
     - [删除远程分支上的idea配置文件](git/删除远程分支上的idea配置文件.md)
+    - [回滚最新一次提交](git/回滚最新一次提交.md)
 
 
 * [java](java/README.md)
