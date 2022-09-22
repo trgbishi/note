@@ -37,6 +37,8 @@
     * [influxdb]
         - [centos8下的安装及基本设置](DB/influxdb/centos8下的安装及基本设置.md)
         - [rp与cq](DB/influxdb/rp与cq.md)
+    * [elasticsearch]
+        - [es 查询方式](DB/elasticsearch/es查询方式.md)
     * [使用powerdesign上的建表语句时，需要指定数据库语法](DB/使用powerdesign上的建表语句时，需要指定数据库语法.md)
 
 
