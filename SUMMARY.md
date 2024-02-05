@@ -175,4 +175,4 @@
     - [第一个vue项目](vue/第一个vue项目.md)
 
 * [android抓包](android抓包/README.md)
-    - [在雷电模拟器下为reqable安装系统证书](vue/在雷电模拟器下为reqable安装系统证书.md)
+    - [在雷电模拟器下为reqable安装系统证书](android抓包/在雷电模拟器下为reqable安装系统证书.md)
