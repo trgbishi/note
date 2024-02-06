@@ -176,3 +176,4 @@
 
 * [android抓包](android抓包/README.md)
     - [在雷电模拟器下为reqable安装系统证书](android抓包/在雷电模拟器下为reqable安装系统证书.md)
+    - [用Proxifier突破app不走代理无法抓包的限制](android抓包/用Proxifier突破app不走代理无法抓包的限制.md)
